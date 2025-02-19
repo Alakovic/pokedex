@@ -17,7 +17,6 @@ function renderPokemon(pokemon) {
     `;
 }
 
-
 function renderPokemonOverlay(pokemon) {
     let type_icon = generateTypeIcons(pokemon.typeIcons);
     let bg_color = toggleBackgroundColor(pokemon.typeNames);
@@ -46,8 +45,7 @@ function renderPokemonOverlay(pokemon) {
                 </span>
             </div>
             <div id="pokemon_info"></div>
-        </div>
-    `;
+        </div>`;
 }
 
 function toggleBackgroundColor(typeNames){
@@ -81,7 +79,6 @@ function toggleBackgroundColor(typeNames){
     }
 }
 
-
 function generateTypeIcons(typeIcons){
     let type_icon = '' ;
     for (let i = 0; i < typeIcons.length; i++) {
@@ -89,8 +86,6 @@ function generateTypeIcons(typeIcons){
     }
     return type_icon;
 }
-
-
 
 function renderMainContent(pokemon) {
     let abilities = pokemon.abilitiesNames.join(', ')
