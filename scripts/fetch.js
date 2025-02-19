@@ -1,6 +1,5 @@
 let dataList = {};
 let allPokemon = [];
-let typeUrlList = [];
 let offset = 0;
 
 async function fetchData() { 
